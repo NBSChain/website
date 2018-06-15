@@ -1,0 +1,400 @@
+@charset "UTF-8";
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+fieldset, img, input, button { /*fieldset组合表单中的相关元素*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none; /*清除列表风格*/
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+.body {
+    background-color: #ffffff;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+
+/****************/
+
+.banner {
+    width: 100%;
+    height: 858px;
+    background: url(../image/banner_bg.png) no-repeat top center;
+}
+
+.banner-content ul {
+    margin-top: 136px;
+    color: #ffffff;
+    font-size: 60px;
+    line-height: 96px;
+}
+
+.site-nav {
+    padding-top: 68px;
+}
+
+.site-nav-left {
+    display: inline-block;
+    width: 126px;
+}
+
+.site-nav-left h2 {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.site-nav-right li {
+    float: left;
+    padding-right: 30px;
+    font-size: 14px;
+    line-height: 36px;
+}
+
+.site-nav-right li:nth-child(5), .site-nav-right li:nth-child(6), .site-nav-right li:nth-child(7), .site-nav-right li:nth-child(8), .site-nav-right li:nth-child(9) {
+    padding-top: 4px;
+}
+
+.site-nav-right .drop-choose img {
+    margin-top: 8px;
+    float: left;
+}
+
+.site-nav-right .drop-choose div {
+    float: right;
+    margin-left: 10px;
+    line-height: 36px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.drop-down img {
+    margin-top: 16px;
+    float: left;
+}
+
+.drop-down div {
+    float: right;
+    margin-left: 10px;
+    color: #ffffff;
+    font-size: 12px;
+    margin-top: 9px;
+    line-height: 36px;
+}
+
+.drop-pop {
+    position: relative;
+    z-index: 21;
+}
+
+.drop-down{
+    position: absolute;
+    left: 0;
+    top: 24px;
+    display: none;
+}
+
+
+.about {
+    height: 305px;
+    margin-top: 70px;
+    background: url("../image/about_ic.png") no-repeat top center;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #211f46;
+}
+
+.about p {
+    margin-top: 50px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.prototype {
+    margin-top: 268px;
+    height: 481px;
+    background: url("../image/PROTOTYPE_bg.png") no-repeat top left;
+}
+
+.prototype-content {
+    float: right;
+}
+
+.prototype-content h2 {
+    margin-right: 288px;
+    font-size: 30px;
+    color: #211f46;
+}
+
+.prototype-content ul {
+    margin-left: 86px;
+    margin-top: 120px;
+}
+
+.prototype-content li {
+    font-size: 14px;
+    line-height: 60px;
+}
+
+.roadmap {
+    height: 773px;
+    margin-top: 170px;
+    background: url("../image/roadmap_bg.png") no-repeat top center;
+}
+
+.roadmap h2 {
+    text-align: center;
+    padding-top: 140px;
+    font-size: 30px;
+    color: #211f46;
+}
+
+.map1 {
+    margin-top: 60px;
+    margin-left: 82px;
+}
+
+.line1 {
+    width: 10px;
+    height: 2px;
+    margin-top: 6px;
+    background-color: #1f2a56;
+}
+
+.line2 {
+    width: 210px;
+    height: 2px;
+    margin-top: 6px;
+    background-color: #1f2a56;
+}
+
+.line3 {
+    width: 200px;
+    height: 2px;
+    margin-top: 6px;
+    background-color: #1f2a56;
+}
+
+.line4 {
+    width: 48px;
+    height: 2px;
+    margin-top: 6px;
+    background-color: #1f2a56;
+}
+
+.line5 {
+    width: 124px;
+    height: 2px;
+    margin-top: 6px;
+    background-color: #1f2a56;
+}
+
+.line6 {
+    width: 104px;
+    height: 2px;
+    margin-top: 6px;
+    background-color: #1f2a56;
+}
+
+.line7 {
+    width: 80px;
+    height: 2px;
+    margin-top: 6px;
+    background-color: #1f2a56;
+}
+
+.line8 {
+    width: 20px;
+    height: 2px;
+    margin-top: 6px;
+    background-color: #1f2a56;
+}
+
+.line-text {
+    font-size: 18px;
+    line-height: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #1f8ad5;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border: #1f2a56 solid 2px;
+    border-radius: 10px;
+}
+
+.map2 {
+    margin-left: 112px;
+    margin-top: 30px;
+}
+
+.map2 p:first-child {
+    margin-right: 136px;
+}
+
+.map2 p:last-child {
+    margin-left: 204px;
+}
+
+.map3 {
+    margin-top: 160px;
+    margin-left: 82px;
+}
+
+.map4 {
+    margin-left: 112px;
+    margin-top: 30px;
+}
+
+.map4 p:nth-child(2) {
+    margin-left: 98px;
+}
+
+.map4 p:nth-child(3) {
+    margin-left: 94px;
+}
+
+.map4 p:nth-child(4) {
+    margin-left: 58px;
+}
+
+.document h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #211f46;
+}
+.document{
+    margin-top: 60px;
+}
+
+.document div {
+    display: inline-block;
+    margin-top: 30px;
+    height: 68px;
+    width: 300px;
+    margin-left: 350px;
+    background-color: #251f7f;
+    text-align: center;
+    line-height: 68px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#fb7aaf', endColorStr='#8463da', gradientType=1);
+    background: -moz-linear-gradient(left, #fb7aaf, #8463da);
+    background: -o-linear-gradient(left, #fb7aaf, #8463da);
+    background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#fb7aaf), to(#8463da));
+}
+
+.footer {
+    margin-top: 160px;
+    height: 424px;
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#211f46', endColorStr='#251f7f', gradientType=1);
+    background: -moz-linear-gradient(left, #211f46, #251f7f);
+    background: -o-linear-gradient(left, #211f46, #251f7f);
+    background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#211f46), to(#251f7f));
+}
+
+.footer h2 {
+    padding-top: 60px;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.footer ul {
+    width: 870px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.footer ul li {
+    margin-right: 100px;
+    float: left;
+}
+
+.footer ul li:first-child {
+    margin-left: 100px;
+}
+
+.footer p {
+    margin-top: 130px;
+    text-align: center;
+    font-size: 12px;
+    color: #eee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
