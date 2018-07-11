@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <title>NBS</title>
     <meta name="viewport" content="width=1080"/>
-    <link rel="stylesheet" charset="UTF-8" href="css/base.css?a">
+    <link rel="stylesheet" charset="UTF-8" href="css/base.css?b">
+    <script type="application/javascript">
+        function showWechat() {
+            document.getElementById("wechat-jpg").style.display = "block";
+        }
+        function hideWechat() {
+            document.getElementById("wechat-jpg").style.display = "none";
+        }
+    </script>
 </head>
 <body>
 <div class="banner">
@@ -24,7 +32,10 @@
             <li><a href="https://github.com/W-B-S" target="_blank"><img src="image/github_ic.png"></a></li>
             <li><a href="https://twitter.com/nbsofficialgroup" target="_blank"><img src="image/Twitter_ic.png"></a></li>
             <li><a><img src="image/Headline_ic.png"></a></li>
-            <li><a><img src="image/wechat_ic.png"></a></li>
+            <li class="wechat-jpg-li" onmouseover="showWechat()" onmouseleave="hideWechat()">
+                <a><img src="image/wechat_ic.png"></a>
+                <img class="wechat-jpg" id="wechat-jpg" src="image/wechat.jpg">
+            </li>
             <li class="drop-pop" id="drop-pop">
                 <div class="drop-choose">
                     <img src="image/CN_ic.png">

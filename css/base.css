@@ -404,3 +404,13 @@ ul, ol {
     background: -o-linear-gradient(left, #8463da, #fb7aaf);
     background: -webkit-gradient(linear, 0% 0%, 100% 0%, from(#8463da), to(#fb7aaf));
 }
+
+.wechat-jpg {
+    width: 150px;
+    position: absolute;
+    left: -60px;
+    display: none;
+}
+.wechat-jpg-li {
+    position: relative;
+}
